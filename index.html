@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>HFA</title>
+</head>
+<body>
+    <h1 id="name">
+        <span>
+            <img src="./js/photos/logo.jpg" alt="HFA Logo" class="logo">
+        </span>
+        Healthcare For All
+    </h1>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a class="listedItem" href="#">Home</a></li>
+                <li><a class="listedItem" href="#">Plans</a></li>
+                <li><a class="listedItem" href="./contactPage.html" onclick="prompt('Contact Us')">Contact</a></li>
+                <li><a class="listedItem" href="#">Insurance</a></li>
+                    <span class="dropdown">
+                        <button class="dropbtn">Dropdown</button>
+                        <div class="dropdown-content">
+                          <a href="#">Health Insurance</a>
+                          <a href="#">Life Insurance</a>
+                          <a href="#">Miscellaneous Insurance</a>
+                        </div> 
+                    </span>
+            </ul>
+        </nav>
+        <main>
+            <div class="wrap__count__engine">
+                <span class="minus__button">-</span>
+                <span class="numbers">00</span>
+                <span class="plus__button">+</span>
+            </div>
+        </main>
+        <div class="sideBar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, maiores laboriosam ea laudantium harum dicta, veritatis labore voluptate, qui accusamus aperiam nam? Consectetur aperiam sint molestiae illum assumenda? Delectus, excepturi.</div>
+        <div class="content__one">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="./js/photos/famBeach.jpg" alt="Family on Beach" style="width:100%">
+                  <div class="text"></div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="./js/photos/famHands.jpg" alt="Family Holding Hands" style="width:100%">
+                  <div class="text"></div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="./js/photos/kid.jpg" alt="Child Running" style="width:100%">
+                  <div class="text"></div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <footer>
+            <div id="time"></div>
+            <div>  
+                <dialog id="dialog__box">  
+                    <p>
+                        <q>You have a desire to learn</q> 
+                        - <cite>Marcus</cite>
+                    </p>  
+                    <button id="hide">Close</button>  
+                </dialog>  
+                <button id="show">Show Dialog</button>  
+            </div>
+            <div id="footer__words">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium qui laboriosam inventore? Corporis, veritatis excepturi quas nostrum, minus est quia fuga nihil molestias, ipsam repudiandae cum rerum blanditiis harum laborum? ©</div>
+            <script src="./js/countEngine.js"></script>
+            <script src="./js/timer.js"></script>
+            <script src="./js/dialog.js"></script>
+            <script src="./js/slideshow.js"></script>
+        </footer>
+    </div>
+</body>
+</html>
